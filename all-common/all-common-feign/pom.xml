@@ -6,4 +6,19 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>all-common-feign</artifactId>
+  <dependencies>
+  	 <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+  	 <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-oauth2</artifactId>
+    </dependency>
+  	 <dependency>
+  	 	<groupId>xx</groupId>
+  	 	<artifactId>all-common-base</artifactId>
+  	 	<version>0.0.1-SNAPSHOT</version>
+  	 </dependency>
+  </dependencies>
 </project>
