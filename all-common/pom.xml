@@ -9,12 +9,12 @@
   <packaging>pom</packaging>
   <modules>
   	<module>all-common-web</module>
-  	<module>all-common-share</module>
   	<module>all-common-feign</module>
   	<module>all-common-security-core</module>
   	<module>all-common-security-oauth</module>
   	<module>all-common-security-web</module>
   	<module>all-common-base</module>
   	<module>all-common-utils</module>
+  	<module>all-common-mybatis</module>
   </modules>
 </project>
