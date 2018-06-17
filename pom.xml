@@ -23,11 +23,8 @@
 	</parent>
 	<modules>
 		<module>all-auth</module>
-		<module>all-discover</module>
-		<module>all-gateway</module>
 		<module>all-config</module>
 		<module>all-common</module>
-		
 		<module>all-upms</module>
 		<module>all-monitor</module>
 		<module>all-zipkin</module>
