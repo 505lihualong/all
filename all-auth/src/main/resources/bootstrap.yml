@@ -1,7 +1,7 @@
 server:
   port: 10001
   servlet:
-    context-path: auth
+    context-path: /auth
 spring:
   application:
     name: all-auth

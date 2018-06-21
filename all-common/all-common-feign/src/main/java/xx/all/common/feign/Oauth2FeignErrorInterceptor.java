@@ -1,16 +1,9 @@
 package xx.all.common.feign;
 
-import java.io.IOException;
-import java.util.HashMap;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.netflix.hystrix.exception.HystrixBadRequestException;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.base.exception.BusinessException;
 
 import feign.Response;
 import feign.codec.ErrorDecoder;
@@ -35,7 +28,7 @@ public class Oauth2FeignErrorInterceptor implements ErrorDecoder {
 	 */
 	@Override
 	public Exception decode(final String methodKey, final Response response) {
-		if (response.status() >= HttpStatus.BAD_REQUEST.value() && response.status() < HttpStatus.INTERNAL_SERVER_ERROR.value()) {
+	/*	if (response.status() >= HttpStatus.BAD_REQUEST.value() && response.status() < HttpStatus.INTERNAL_SERVER_ERROR.value()) {
 			return new HystrixBadRequestException("request exception wrapper");
 		}
 
@@ -59,6 +52,7 @@ public class Oauth2FeignErrorInterceptor implements ErrorDecoder {
 		} catch (IOException e) {
 			logger.info("Failed to process response body");
 		}
-		return defaultErrorDecoder.decode(methodKey, response);
+		return defaultErrorDecoder.decode(methodKey, response);*/
+		return null;
 	}
 }

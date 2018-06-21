@@ -15,8 +15,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class Application {
-	private static final Logger logger = LoggerFactory.getLogger(Application.class);
+public class AuthApplication {
+	private static final Logger logger = LoggerFactory.getLogger(AuthApplication.class);
 	/**
 	 * @Title: main
 	 * @Description: 启动入口类main方法
@@ -28,6 +28,6 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 		logger.debug("Start running all-auth.");
-    	SpringApplication.run(Application.class, args);
+    	SpringApplication.run(AuthApplication.class, args);
     }
 }

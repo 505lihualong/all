@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>all-eureka</artifactId>
 	<properties>
-		<start-class>xx.all.eureka.Application</start-class>
+		<start-class>xx.all.eureka.EurekaApplication</start-class>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
